@@ -33,16 +33,14 @@ async function searchImages(){
 
         imageWrapper.appendChild(image)
         imageWrapper.appendChild(imageLink)
-        imageWrapper.appendChild(imageWrapper);
+        searchResults.appendChild(imageWrapper);
     });
 
     page++ 
     if(page > 1){
-        showMore.style.display = "block"
+        showMore.style.display = "block";
     }
 }
-
-
 
 formEl.addEventListener("submit", (event) =>{
     event.preventDefault()
